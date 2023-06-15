@@ -1,7 +1,7 @@
 const express = require('express');
 require('dotenv').config();
 
-const router = require('./routes/productsRoute')
+const booksrouter = require('./routes/booksRoute')
 
 const app = express();
 
@@ -11,7 +11,7 @@ app.get('/', (req, res)=>{
     res.send("Ok")
 })
 
-app.use(router)
+app.use('/books', booksrouter)
 
 
 
