@@ -9,16 +9,16 @@ CREATE TABLE books(
     Author VARCHAR(50) NOT NULL, 
     PublicationYear DATE NOT NULL, 
     Status VARCHAR(20) DEFAULT 'available'
-)
+);
 
 
 CREATE TABLE members(
     MemberID INT PRIMARY KEY IDENTITY(1,1), 
     FullName VARCHAR(50) NOT NULL, 
     Address VARCHAR(50), 
-    ContactNumber INT NOT NULL,
+    ContactNumber VARCHAR(15) NOT NULL,
     password VARCHAR(255)
-)
+);
 
 
 
@@ -28,11 +28,11 @@ CREATE TABLE loans(
     MemberID INT REFERENCES members(MemberID), 
     LoanDate DATE, 
     ReturnDate DATE
-)
+);
 
 
 --- delete objects
 
-DROP TABLE loans;
-DROP TABLE members;
-DROP TABLE books;
+--DROP TABLE loans;
+--DROP TABLE members;
+--DROP TABLE books;
