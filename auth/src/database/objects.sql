@@ -16,7 +16,7 @@ CREATE TABLE members(
     MemberID INT PRIMARY KEY IDENTITY(1,1), 
     FullName VARCHAR(50) NOT NULL, 
     Address VARCHAR(50), 
-    ContactNumber VARCHAR(15) NOT NULL,
+    ContactNumber INT NOT NULL,
     password VARCHAR(255)
 )
 

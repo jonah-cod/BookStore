@@ -36,7 +36,9 @@ GO
 -- all available books
 
 
-CREATE OR ALTER PROC dbo.get_all_available_books 
+CREATE OR ALTER PROC dbo.get_all_available_books (
+    
+)
 
 AS 
 
